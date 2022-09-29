@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Galeria de Imagenes</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/main.css">
+        
+    </head>
+    <body>
+            <!--<nav class="navbar navbar-dark bg-dark embed-responsive">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <ul class="navbar-nav navbar-nav-scroll-hidden" style="max-height: 100px;">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            Galeria
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Flores</a></li>
+                            <li><a class="dropdown-item" href="#">Frutales</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Ver ambas</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                      </ul>
+                </div>
+            </nav>-->
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active"><i class="fa-solid fa-house"></i> Inicio</a>
+                <div class="dropdown">
+                  <button class="dropbtn" onclick="dropdwn()"><i class="fa-regular fa-image"></i> Galeria 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Flores</a>
+                    <a href="#">Frutales</a>
+                    <a href="#">Ver todo</a>
+                  </div>
+                </div> 
+                <a href="#about"><i class="fa-solid fa-person-dress"></i> Acerca de</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
+              <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-regular fa-circle-up"></i></button>  
+        
+            <div id="container-mod" class="container-fluid center align-items-center justify-content-center">
+              <div class="item1"></div>
+              <div class="item2"></div>
+              <div class="item3"></div>
+              <div class="item4"></div>
+                          
+                  <div id="carouselExampleControls" class="carousel slide center" data-ride="carousel">
+                      <div class="carousel-inner center">
+                          <div class="carousel-item active responsive">
+                              <div class="imagebox">
+                                  <a href="#" data-large-src="./assets/img/1.png" data-toggle="modal" data-target="#modal">
+                                    <img src="./assets/img/1.png"  class="d-block w-100 category-banner img-responsive">
+                                    <span class="imagebox-desc">Ver más</span>
+                                  </a>
+                                </div>
+                          </div>
+                          <div class="carousel-item responsive">
+                              <div class="imagebox">
+                                  <a href="#" data-large-src="./assets/img/2.png" data-toggle="modal" data-target="#modal">
+                                    <img src="./assets/img/2.png"  class="d-block w-100 category-banner img-responsive">
+                                    <span class="imagebox-desc">Ver más</span>
+                                  </a>
+                                </div>
+                          </div>
+                          <div class="carousel-item responsive">
+                              <div class="imagebox">
+                                  <a href="#" data-large-src="./assets/img/3.png" data-toggle="modal" data-target="#modal">
+                                    <img src="./assets/img/3.png"  class="d-block w-100 category-banner img-responsive">
+                                    <span class="imagebox-desc">Ver más</span>
+                                  </a>
+                                </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden"></span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden"></span>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              
+            
+              <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h3 class="text-center mb-0"></h3>
+                              <button type="button" class="close float-right" aria-label="Close" data-dismiss="modal">
+                                <span aria-hidden="true">&#xD7;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body p-0 text-center bg-alt">
+                              <img src="" id="imagen-modal" class="loaded-image img-fluid">
+                          </div>
+                          <div class="modal-footer">
+                              <p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+                              <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">OK</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            
+              <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>	
+            <script src="./index.js"></script>
+    </body>
+</html>
