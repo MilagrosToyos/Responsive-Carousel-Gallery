@@ -1,3 +1,8 @@
+.color1 {color: #ff96f4;}
+.color2 {color: #ff7fc5;}
+.color3 {color: #ffd672;}
+.color4 {color: #fffb97;}
+.color5 {color: #c3fff6;}
 
 .cerrar{
     position:absolute;
@@ -35,7 +40,7 @@
 }
 
 #container-mod{
-    background-color:red;
+    background-color: #fffb97;
     max-width: 100%;
     max-height: 100vh;
     display: flex;/*los nodos/eltos de este contenedor van a adoptar
@@ -59,7 +64,7 @@
 /* Add a black background color to the top navigation */
 .topnav {
   overflow: hidden;  
-  background-color: #333;
+  background-color: #ff96f4;
   }
   
   /* Style the links inside the navigation bar */
@@ -75,7 +80,7 @@
   
   /* Add an active class to highlight the current page */
   .active {
-    background-color: #04AA6D;
+    background-color: #ff7fc5;
     color: white;
   }
   
@@ -125,7 +130,7 @@
   
   /* Add a dark background on topnav links and the dropdown button on hover */
   .topnav a:hover, .dropdown:active .dropbtn {
-    background-color: #555;
+    background-color: #ffd672;
     color: white;
   }
   
@@ -184,6 +189,11 @@
     justify-content: center;
   }
 
+#modalImg {
+  background-color: #c3fff6;
+
+}
+
 /*Boton para arriba*/
 #myBtn {
   display: none;
@@ -194,7 +204,7 @@
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #ffd672;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -202,9 +212,13 @@
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: #ff96f4;
 }
 
+
+#aMmodal-content {
+  background-color: #ff96f4;
+}
 
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
