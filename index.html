@@ -11,55 +11,39 @@
         
     </head>
     <body>
-            <!--<nav class="navbar navbar-dark bg-dark embed-responsive">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <ul class="navbar-nav navbar-nav-scroll-hidden" style="max-height: 100px;">
-                        <li class="nav-item active">
-                          <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                            Galeria
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Flores</a></li>
-                            <li><a class="dropdown-item" href="#">Frutales</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Ver ambas</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                        </li>
-                      </ul>
-                </div>
-            </nav>-->
-            <div class="topnav" id="myTopnav">
-                <a href="#home" class="active"><i class="fa-solid fa-house"></i> Inicio</a>
-                <div class="dropdown">
-                  <button class="dropbtn" onclick="dropdwn()"><i class="fa-regular fa-image"></i> Galeria 
-                    <i class="fa fa-caret-down"></i>
-                  </button>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Flores</a>
-                    <a href="#">Frutales</a>
-                    <a href="#">Ver todo</a>
-                  </div>
-                </div> 
-                <a href="#about" data-toggle="modal" data-target="#aboutMeModal"><i class="aboutMe fa-solid fa-person-dress"></i> Acerca de</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          <nav class="navbar navvbar navbar-expand-sm fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/img/uumaru.png" width="30" height="30" class="d-inline-block align-top" alt=""> Navbaaar</a>
+              <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto my-2 my-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa-regular fa-image"></i> Galería</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Flores</a></li>
+                      <li><a class="dropdown-item" href="#">Frutales</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Ver ambas</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"data-toggle="modal" data-target="#aboutMeModal"><i class="aboutMe fa-solid fa-person-dress"></i> Sobre mi</a>
+                  </li>
+                </ul>
               </div>
-              <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-regular fa-circle-up"></i></button>  
-        
-            <div id="container-mod" class="container-fluid center align-items-center justify-content-center">
-              <div class="item1"></div>
-              <div class="item2"></div>
-              <div class="item3"></div>
-              <div class="item4"></div>
-                          
+            </div>
+          </nav>
+          <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-regular fa-circle-up"></i></button>
+
+
+            <div id="container-mod" class="container-fluid center align-items-center justify-content-center">        
                   <div id="carouselExampleControls" class="carousel slide center" data-ride="carousel">
                       <div class="carousel-inner center">
                           <div class="carousel-item active responsive">
