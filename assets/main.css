@@ -49,6 +49,16 @@
     
 }
 
+body{
+  background-color: #fffb97;
+  max-width: 100%;
+  max-height: 100vh;
+  display: flex;/*los nodos/eltos de este contenedor van a adoptar
+   su posicion usando como herramienta de posicion el flex box  */
+  height: 100vh;
+  
+}
+
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
