@@ -20,12 +20,12 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto my-2 my-lg-0">
+            <ul class="navbar-nav mr-auto my-2 my-lg-0 nav-pills" role="tablist">
               <li class="nav-item">
-                <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+                <a class="nav-link active" data-toggle="pill" href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"><i class="fa-regular fa-image"></i> Galería</a>
+                <a class="nav-link dropdown-toggle" id="gal" href="#" data-toggle="dropdown"><i class="fa-regular fa-image"></i> Galería</a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="flores.html">Flores</a></li>
                   <li><a class="dropdown-item" href="frutales.html">Frutales</a></li>
@@ -41,12 +41,20 @@
         </div>
       </nav>
       
-      <div class="container-fluid">
-        <p class="text-break justify-content-center d-inline-block align-center ">
-          Bienvenido!! En este proyecto, podrŕas visualizar 3 galerias de fotos en efecto carrusel,
-          las cuales podrás elegir desde el navbar, en el apartado de "Galería".
-        </p>
+       <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="container tab-pane active"><br>
+          <br>
+          <br>
+          <p class="text-break">Bienvenido!! En este proyecto, podrás visualizar 3 galerias de fotos en efecto carrusel,
+            las cuales podrás elegir desde el navbar, en el apartado de "Galería".
+            <br>
+            <br>
+            <br>
+            Nótese que, "Flores" y "Frutales" llevan modal sin scroll mientras que en
+          "Ver ambas" el modal es "responsive" con scroll. :D</p>
       </div>
+
       <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-regular fa-circle-up"></i></button>
         
       <!-- aboutMeModal -->
@@ -66,9 +74,9 @@
               </p>
             </div>
             <div class="modal-footer">
-              <a href="https://github.com/MilagrosToyos"><i class="fa-brands fa-github"></i></a>
-              <a href="https://twitter.com/MiLiiToyos"><i class="fa-brands fa-twitter"></i></a>
-              <a href="https://www.instagram.com/miliitoyos/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com/MilagrosToyos" target=”_blank”><i class="fa-brands fa-github"></i></a>
+              <a href="https://twitter.com/MiLiiToyos" target=”_blank”><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/miliitoyos/" target=”_blank”><i class="fa-brands fa-instagram"></i></a>
               <i class="fa-regular fa-envelope">miliitoyos@gmail.com</i>
             </div>
           </div>

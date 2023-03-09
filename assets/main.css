@@ -83,10 +83,34 @@ body{
     font-size: 17px;
   }
 
+  .nav-pills .nav-link.active{
+    background-color: #ff7fc5;
+    color: black;
+  }
+
+  #gal:focus{
+    background-color: #ff7fc5;
+    color: black;
+  }
+  
+  #gal:active{
+    background-color: #ff7fc5;
+    color: black;
+  }
+
+  ul.dropdown-menu > li > a:focus{
+    background-color: #ff7fc5;
+    color: black;
+  }
+
+  .nav-link:focus{
+    background-color: #ff7fc5;
+    color: black;
+  }
   /* Add an active class to highlight the current page */
   .active {
     background-color: #ff7fc5;
-    color: white;
+    color: black;
   }
 
   .show {
@@ -199,6 +223,19 @@ body{
   }
   
 }*/
+
+.fa-github, .fa-twitter, .fa-instagram{
+  color: black;
+}
+.fa-github:hover{
+  color: white;
+}
+.fa-twitter:hover{
+  color: rgb(0, 172, 238);
+}
+.fa-instagram:hover{
+  color: purple;
+}
 
 /* Extra small devices (portrait phones, less than 600px)*/
 @media (max-width: 600px) { 
